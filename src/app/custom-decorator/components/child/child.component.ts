@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { TestConsole } from "../../decorators/test-console.decorator";
 import { PromptDelete } from "../../decorators/prompt-delete.decorator";
 
-@TestConsole
+@TestConsole('class')
 @Component({
   selector: 'app-child',
   templateUrl: './child.component.html',
@@ -10,7 +10,7 @@ import { PromptDelete } from "../../decorators/prompt-delete.decorator";
 })
 export class ChildComponent {
 
-  @TestConsole
+  @TestConsole('method')
   add(): void {
     console.log('Child method add');
   }

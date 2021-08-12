@@ -7,9 +7,9 @@ import {PromptDelete} from "../../decorators/prompt-delete.decorator";
   templateUrl: './another-child.component.html',
   styleUrls: ['./another-child.component.sass']
 })
-@TestConsole
+@TestConsole('class')
 export class AnotherChildComponent implements OnInit {
-  @TestConsole
+  @TestConsole('property')
   property: string;
 
   constructor() {
@@ -19,7 +19,7 @@ export class AnotherChildComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  @TestConsole
+  @TestConsole('method')
   add(): void {
     console.log('Another child method add');
   }
