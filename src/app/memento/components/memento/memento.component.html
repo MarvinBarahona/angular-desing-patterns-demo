@@ -1,0 +1,7 @@
+<app-grid [setState]="state" (newSnapshot)="onGridState($event)"></app-grid>
+
+<ul>
+  <li *ngFor="let st of states; let i = index" (click)="setState(st)">
+    State {{i}}: {{st.color1 || 'Empty'}} - {{st.color2 || 'Empty'}} - {{st.color3 || 'Empty'}} - {{st.color4 || 'Empty'}}
+  </li>
+</ul>

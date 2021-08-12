@@ -10,6 +10,10 @@ const routes: Routes = [
     path: 'composite',
     loadChildren: () => import('./composite/composite.module').then(m => m.CompositeModule),
   },
+  {
+    path: 'memento',
+    loadChildren: () => import('./memento/memento.module').then(m => m.MementoModule),
+  },
 ];
 
 @NgModule({
