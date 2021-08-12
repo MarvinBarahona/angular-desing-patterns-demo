@@ -1,0 +1,11 @@
+<div>
+  <button (click)="addContainer()">Add task</button>
+  <button (click)="addLeaf()">Add subtask</button>
+  <label>
+    {{title}} {{isCompleted() ? 'Done' : 'Pending'}}
+  </label>
+
+  <ng-container *ngFor="let type of childrenType">
+    <app-dynamic-loader [type]="type" (newChild)="onNewChild($event)"></app-dynamic-loader>
+  </ng-container>
+</div>

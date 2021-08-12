@@ -5,7 +5,7 @@ import {PromptDelete} from "../../decorators/prompt-delete.decorator";
 @Component({
   selector: 'app-another-child',
   templateUrl: './another-child.component.html',
-  styleUrls: ['./another-child.component.css']
+  styleUrls: ['./another-child.component.sass']
 })
 @TestConsole
 export class AnotherChildComponent implements OnInit {

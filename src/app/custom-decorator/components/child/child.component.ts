@@ -6,7 +6,7 @@ import { PromptDelete } from "../../decorators/prompt-delete.decorator";
 @Component({
   selector: 'app-child',
   templateUrl: './child.component.html',
-  styleUrls: ['./child.component.css']
+  styleUrls: ['./child.component.sass']
 })
 export class ChildComponent {
 
